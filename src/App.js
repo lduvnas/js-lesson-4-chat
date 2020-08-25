@@ -5,9 +5,8 @@ import ChatRoom from "./components/ChatRoom";
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <ChatRoom />
-      <div></div>
     </div>
   );
 }

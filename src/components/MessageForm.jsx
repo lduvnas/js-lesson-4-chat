@@ -13,8 +13,12 @@ export default function MessageForm({ handlePostMessage }) {
   return (
     <div>
       <h2>Message form</h2>
-      <input type="text" ref={messageInputField} />
-      <button className="btn btn-dark btn-sm" onClick={handleOnClick}>
+      <input
+        type="text"
+        ref={messageInputField}
+        className="form-control w-75"
+      />
+      <button className="btn btn-primary mb-2" onClick={handleOnClick}>
         Send Message
       </button>
     </div>

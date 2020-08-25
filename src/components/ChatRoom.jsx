@@ -40,19 +40,18 @@ export default function ChatRoom() {
   }
 
   return (
-    <div>
+    <div className="chat-room">
       <h1>{chatRoom.name}</h1>
-      <ul>
-        {
-          // Object.entries - gör om från key value till en array
-          // gör det lättare att loopa igenom det fast man har blaj-iden
-          // tar alla keys och sätter som första index och vales som obj 2
-          <div>
-            <MessageForm handlePostMessage={handlePostMessage} />
-            <MessageList chatRoom={chatRoom} />
-          </div>
-        }
-      </ul>
+
+      {
+        // Object.entries - gör om från key value till en array
+        // gör det lättare att loopa igenom det fast man har blaj-iden
+        // tar alla keys och sätter som första index och vales som obj 2
+        <div>
+          <MessageForm handlePostMessage={handlePostMessage} />
+          <MessageList chatRoom={chatRoom} />
+        </div>
+      }
     </div>
   );
 }
